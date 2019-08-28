@@ -42,7 +42,8 @@ def guess():
             guessedNumber = guessNumber
             break
         elif action == 2:
-            if guessNumber == 1: pivot = 1
+            if guessNumber == 1:
+                pivot = 1
             guessNumber = guessNumber + pivot
         elif action == 3:
             guessNumber = guessNumber - pivot

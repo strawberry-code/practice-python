@@ -4,9 +4,10 @@
 
 import os
 
+
 def guessWord(word):
     secretLetters = list(word)
-    del secretLetters[-1] # removes the \n
+    del secretLetters[-1]  # removes the \n
     guessedLetters = ["_"] * len(secretLetters)
     stop = False
     attempts = 6
@@ -20,14 +21,17 @@ def guessWord(word):
             print(word)
             stop = True
         else:
-            print(' '.join(guessedLetters))
+            print(" ".join(guessedLetters))
             # print("cheats eabled:\n{}".format(secretLetters))
-            userLetter = input("give a letter (0 to stop) (lefts attemps {})> ".format(attempts))
+            userLetter = input(
+                "give a letter (0 to stop) (lefts attemps {})> ".format(attempts)
+            )
             os.system("clear")
             if userLetter == "0":
                 stop = True
             elif userLetter in secretLetters:
-                if attempts < 3: attempts = attempts + 1 # Easy mode: ON 😜
+                if attempts < 3:
+                    attempts = attempts + 1  # Easy mode: ON 😜
                 for i in range(len(secretLetters)):
                     if secretLetters[i] == userLetter:
                         guessedLetters[i] = userLetter

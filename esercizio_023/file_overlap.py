@@ -37,10 +37,12 @@ def findOverlaps(listOne, listTwo):
             listThree.append(e)
     return listThree
 
+
 def main():
     listOne = getText("happynumbers.txt").split()
     listTwo = getText("primenumbers.txt").split()
     overlaps = findOverlaps(listOne, listTwo)
-    print('overlaps: {}'.format(overlaps))
+    print("overlaps: {}".format(overlaps))
+
 
 main()

@@ -61,15 +61,15 @@ def checkWin(board):
     elif board[2][0] == board[1][1] and board[1][1] == board[0][2]:
         return board[2][0]
     else:
-        return 'anyone'
+        return "anyone"
 
 
 def main():
-    print(checkWin(winner_is_O) + ' wins')
-    print(checkWin(winner_is_X) + ' wins')
-    print(checkWin(winner_is_also_X) + ' wins')
-    print(checkWin(no_winner) + ' wins')
-    print(checkWin(also_no_winner) + ' wins')
+    print(checkWin(winner_is_O) + " wins")
+    print(checkWin(winner_is_X) + " wins")
+    print(checkWin(winner_is_also_X) + " wins")
+    print(checkWin(no_winner) + " wins")
+    print(checkWin(also_no_winner) + " wins")
 
 
 main()

@@ -34,7 +34,7 @@
 
 def guessWord(word):
     secretLetters = list(word)
-    del secretLetters[-1] # removes the \n
+    del secretLetters[-1]  # removes the \n
     guessedLetters = ["_"] * len(secretLetters)
     stop = False
     while not stop:

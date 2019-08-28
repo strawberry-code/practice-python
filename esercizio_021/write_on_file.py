@@ -77,14 +77,17 @@ def fetch_weeks():
         week = week - 1
     return output
 
+
 def getFileName():
     filename = input("give the filename:\n> ")
     return filename
+
 
 def main():
     filename = getFileName()
     text = fetch_weeks()
     with open("{}.txt".format(filename), "w") as open_file:
         open_file.write(text)
+
 
 main()
