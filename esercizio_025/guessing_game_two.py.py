@@ -1,0 +1,58 @@
+# Author: Cristiano Cavo
+# Date: 2019-08-27
+# From: http://www.practicepython.org/exercise/2014/12/27/24-draw-a-game-board.html
+
+# In a previous exercise, we’ve written a program that “knows” a number and asks
+# a user to guess it.
+#
+# This time, we’re going to do exactly the opposite. You, the user, will have in
+# your head a number between 0 and 100. The program will guess a number, and
+# you, the user, will say whether it is too high, too low, or your number.
+#
+# At the end of this exchange, your program should print out how many guesses it
+# took to get your number.
+#
+# As the writer of this program, you will have to choose how your program will
+# strategically guess. A naive strategy can be to simply start the guessing at
+# 1, and keep going (2, 3, 4, etc.) until you hit the number. But that’s not an
+# optimal guessing strategy. An alternate strategy might be to guess 50 (right
+# in the middle of the range), and then increase / decrease by 1 as needed.
+# After you’ve written the program, try to find the optimal strategy! (We’ll
+# talk about what is the optimal one next # week with the solution.)
+
+import sys
+import random
+
+
+def guess():
+    guessed = False
+    guessNumber = random.randint(0, 100)
+    while not guessed:
+        pivot = int(guessNumber / 2)
+        guessedNumber = -1
+        action = int(
+            input(
+                "CPU guesses {}, it is:\n 1. guessed\n 2. smaller\n 3. greater\n > ".format(
+                    guessNumber
+                )
+            )
+        )
+        if action == 1:
+            guessed = True
+            guessedNumber = guessNumber
+            break
+        elif action == 2:
+            if guessNumber == 1: pivot = 1
+            guessNumber = guessNumber + pivot
+        elif action == 3:
+            guessNumber = guessNumber - pivot
+
+        pivot = int(guessNumber / 2)
+    return guessedNumber
+
+
+def main():
+    guess()
+
+
+main()
