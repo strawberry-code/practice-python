@@ -1,0 +1,94 @@
+{
+  "books": [
+    {
+      "name": "The Flapping Hands",
+      "author": {
+        "name": "Dylan Castillo",
+        "gender": "male"
+      },
+      "genre": "Thriller",
+      "publish_date": "2004-02-09"
+    },
+    {
+      "name": "From the Rats of the Missing Glass",
+      "author": {
+        "name": "Vincent Lawson",
+        "gender": "male"
+      },
+      "genre": "Docufiction",
+      "publish_date": "2007-02-18"
+    },
+    {
+      "name": "Died Eternity",
+      "author": {
+        "name": "Jordan French",
+        "gender": "male"
+      },
+      "genre": "Adventure",
+      "publish_date": "2014-11-26"
+    },
+    {
+      "name": "Garden's Butterfly",
+      "author": {
+        "name": "Leonard Boyd",
+        "gender": "male"
+      },
+      "genre": "realism",
+      "publish_date": "2013-12-03"
+    },
+    {
+      "name": "Coming the Sealed",
+      "author": {
+        "name": "Chris Tucker",
+        "gender": "male"
+      },
+      "genre": "Mystery",
+      "publish_date": "2015-12-31"
+    },
+    {
+      "name": "Laughing the Eons",
+      "author": {
+        "name": "Floyd Gomez",
+        "gender": "male"
+      },
+      "genre": "Western",
+      "publish_date": "2001-03-05"
+    },
+    {
+      "name": "Dear Birds of Bridge",
+      "author": {
+        "name": "Chester Harper",
+        "gender": "male"
+      },
+      "genre": "Western",
+      "publish_date": "2007-10-17"
+    },
+    {
+      "name": "The Effie On the Grisly Hand",
+      "author": {
+        "name": "Clyde Blake",
+        "gender": "male"
+      },
+      "genre": "Horror",
+      "publish_date": "2013-11-20"
+    },
+    {
+      "name": "After the Woodcarver of the Silver Letters",
+      "author": {
+        "name": "Donald Nunez",
+        "gender": "male"
+      },
+      "genre": "Mystery",
+      "publish_date": "2005-05-05"
+    },
+    {
+      "name": "Under the Gray Revolution",
+      "author": {
+        "name": "Leo Floyd",
+        "gender": "male"
+      },
+      "genre": "Urban",
+      "publish_date": "2002-03-07"
+    }
+  ]
+}
